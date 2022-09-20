@@ -396,7 +396,7 @@ html body {
 .logos{
   margin-right: 3rem;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1280px) {
   .topbar{
     justify-content: space-between;
     height: 6rem;
@@ -459,5 +459,131 @@ html body {
   }
   .team h3{
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navigation{
+    display: none;
+  }
+  .header img{
+    height: 15rem;
+  }
+  .overlay{
+    height: 15rem;
+  }
+  .container{
+    left: 15%;
+    top: 10rem;
+  }
+  .container h1{
+    font-size: 1.3rem;
+  }
+  .container p{
+    margin-top: .8rem;
+    font-size: .8rem;
+  }
+  .container button{
+    font-size: .8rem;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+  }
+  .featured-jobs h3{
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+    margin: 2.5rem 0rem;
+  }
+  .featured-jobs p{
+    margin-top: 1rem;
+  }
+  .make-rec-container{
+    margin-top: 10rem;
+  }
+  .container2{
+    margin: auto;
+    width: 80%;
+  }
+  .companies-container{
+    margin-top: 2rem;
+  }
+  .browse-jobs{
+    display: block;
+  }
+  .browse-text{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .browse-text h3{
+    padding-top: 2rem;
+  }
+  .browse-img{
+    margin-left: 1.5rem;
+  }
+  .container2{
+    text-align: center;
+    margin: 0px;
+    left: 2%;
+    width: 90%;
+    margin-top: 8rem;
+  }
+  .container2 h3{
+    font-size: 1.6rem;
+  }
+  .container2 button{
+    margin-top: 2rem;
+  }
+  .name-table{
+    /* display: inline-block; */
+  }
+  .find-match{
+    display: block;
+    text-align: center;
+    margin: 0rem;
+  }
+  .txt{
+    margin: auto;
+    width: 80%;
+  }
+  .apply-directly .txt{
+    padding: 3rem 1.5rem;
+    margin: auto;
+    text-align: center;
+  }
+  .apply-directly{
+    display: block;
+  }
+  .apply-directly .img{
+    margin: auto;
+  }
+  .team{
+    height: 38rem;
+  }
+  .team h3{
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+  }
+  .team p{
+    font-size: 1rem;
+  }
+  .containerm2{
+    height: 16rem;
+  }
+  .job-container{
+    height: 25rem;
+  }
+  .location{
+    margin-left: 0px;
+  }
+  .table-container h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .table{
+    margin: auto;
+    width: 90%;
+  }
+  .table button{
+      margin: 0px;
   }
 }
