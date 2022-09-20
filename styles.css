@@ -382,7 +382,7 @@ html body {
   font-size: .8rem;
 }
 .job-container{
-  width: 90%;
+  width: 85%;
   margin: auto;
   text-align: left;
 }
@@ -401,6 +401,12 @@ html body {
 }
 .overlay-menu{
   display: none;
+}
+.flickity-prev-next-button.next {
+  right: -3rem !important;
+}
+.flickity-prev-next-button.previous {
+  left: -3rem !important;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -638,6 +644,7 @@ html body {
     height: 16rem;
   }
   .job-container{
+    width: 80%;
     height: 25rem;
   }
   .location{
@@ -647,11 +654,20 @@ html body {
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
+  .candidate-container{
+    width: 80%;
+  }
   .table{
     margin: auto;
-    width: 90%;
+    width: 80%;
   }
   .table button{
       margin: 0px;
+  }
+  .flickity-prev-next-button.next {
+    right: -2.5rem !important;
+  }
+  .flickity-prev-next-button.previous {
+    left: -2.5rem !important;
   }
 }
