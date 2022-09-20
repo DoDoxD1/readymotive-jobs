@@ -8,16 +8,35 @@
     <title>Working Spider</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
+    <div id="myNav" class="overlay-menu">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#">Candidates</a>
+          <a href="#">Employees</a>
+          <a href="#">Our Addons</a>
+          <a href="#">Sign Up</a>
+          <Button>Login</Button>
+        </div>
+      
+      </div>
+      <img src="src/images/menu.png" alt="" class="menu-icon" id="menu-button" onclick="openNav()">
     <div class="header">
         <div class="topbar">
             <div class="logo">
                 <img src="src/images/logo.png" alt="">
             </div>
             <div class="navigation">
+                <!-- <img src="src/images/location-white.png" alt="" class="menu-icon" id="menu-button"> -->
+                <!-- <img src="src/images/settings-white.png" alt="" class="menu-icon" id="cross-button"> -->
                 <ul>
                     <li>Candidates</li>
                     <li>Employees</li>
@@ -26,6 +45,15 @@
                     <Button>Login</Button>
                 </ul>
             </div>
+            <!-- <div class="mob-nav">
+                <ul>
+                    <li>Candidates</li>
+                    <li>Employees</li>
+                    <li>Our Addons</li>
+                    <li>Sign Up</li>
+                    <Button>Login</Button>
+                </ul>
+            </div> -->
         </div>
         <div class="headimg">
             <div class="overlay"></div>
@@ -529,6 +557,21 @@
         //     // options
         // });
     }
+
+
+    document.getElementById("menu-button").onclick = function(){
+        document.getElementById("myNav").style.width = "100%";
+    }
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("menu-button").style.display = "none";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+  document.getElementById("menu-button").style.display = "block";
+}
 </script>
 
 </html>

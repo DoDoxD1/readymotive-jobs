@@ -396,6 +396,13 @@ html body {
 .logos{
   margin-right: 3rem;
 }
+.menu-icon{
+  display: none;
+}
+.overlay-menu{
+  display: none;
+}
+
 @media only screen and (max-width: 1280px) {
   .topbar{
     justify-content: space-between;
@@ -462,9 +469,73 @@ html body {
   }
 }
 @media only screen and (max-width: 500px) {
-  .navigation{
+  .navigation ul{
     display: none;
   }
+  .overlay-menu{
+    display: block;
+  }
+  
+  .menu-icon{
+    display: inline-block !important;
+    position: absolute;
+    height: 2rem !important;
+    right: 2rem;
+    top: 2rem;
+  }
+  .overlay-menu { 
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center;
+    margin-top: 30px; 
+  }
+
+  .overlay-content button{
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    background-color: #2e3134;
+    color: white ;
+    border-color: white;
+    border-radius: 0.3rem;
+  }
+  
+  .overlay-menu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+  }
+  
+  .overlay-menu a:hover, .overlay-menu a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay-menu .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+
   .header img{
     height: 15rem;
   }
@@ -532,9 +603,6 @@ html body {
   }
   .container2 button{
     margin-top: 2rem;
-  }
-  .name-table{
-    /* display: inline-block; */
   }
   .find-match{
     display: block;
